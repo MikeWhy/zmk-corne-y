@@ -37,24 +37,24 @@
 //                    |     |     |     |---|      |      |       |
 //                    +-----+-----+-----+---+------+------+-------+
                         bindings = <
-   &trans  &kp LC(LS(z)) &kp LC(Z) &kp LC(C) &kp LC(V)  &trans    &kp PG_UP &kp HOME &kp UP   &kp END   &kp LBKT &kp RBKT
+   &trans  &kp LC(LS(Z)) &kp LC(Z) &kp LC(C) &kp LC(V)  &trans    &kp PG_UP &kp HOME &kp UP   &kp END   &kp LBKT &kp RBKT
    &trans  &trans        &kp LALT  &kp LCTRL &kp LSHFT  &trans    &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp LBRC &kp RBRC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-                                                                  &trans    &trans   &trans   &trans    &trans   &trans
+                                                                  &trans    &kp BKSP &kp DEL  &trans    &trans   &trans
                                        &trans    &trans   &trans   &trans    &trans   &trans
                         >;
                 };
 
                 raise_layer {
 // -------------------------------------------------------------------------------
-// |  `   |  1  |  2  |  3  |  4  |  5  |---|  6  |  7  |  8  |  9  |  0  |  =   |
+// |  `   |  1  |  2  |  3  |  4  |  5  |---|  6  |  7  |  8  |  9  |  0  |  -   |
 // |  -   |  =  |  [  |  ]  |  \  |  `  |---|     |     |     |     |     |      |
 // |  _   |  +  |  {  |  }  | "|" |  ~  |---|     |     |     |     |     |      |
 // +------------------+-----|-----|-----+---+-----|-----|-----+-----|-----|------+
 //                    |     |     |     |---|     |     |     |
 //                    +-----+-----+-----+---+-----+-----+-----+
                         bindings = <
-   &kp GRAVE &kp N1   &kp N2 &kp N3  &kp N4   &kp N5          &kp N6    &kp N7  &kp N8  &kp N9  &kp N0  &kp EQUAL
+   &kp GRAVE &kp N1   &kp N2 &kp N3  &kp N4   &kp N5          &kp N6    &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS
    &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE   &kp LCTRL &trans  &trans  &trans  &trans  &trans    
    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE   &trans    &trans  &trans  &trans  &trans  &trans    
                                      &trans  &trans  &trans    &trans  &trans  &trans
