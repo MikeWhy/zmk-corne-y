@@ -30,14 +30,14 @@
                 };
                 lower_layer {
 // --------------------------------------------------------------------------------------
-// |      | redo| ^Z  |  ^C |  ^V |     |---| PG_UP| HOME |  UP   |  END  |  [   |  ]   |
+// | redo | ^Z  | ^X  |  ^C |  ^V |     |---| PG_UP| HOME |  UP   |  END  |  [   |  ]   |
 // |      |     | ALT | CTRL| SHFT|     |---| PG_DN| LFT  |  DWN  |  RGT  |  {   |  }   |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |---|      | BKSP |  DEL  |       |      |      |
 // +------------------|-----|-----|-----|---|------|------|-------|---------------------+
 //                    |     |     |     |---|      |      |       |
 //                    +-----+-----+-----+---+------+------+-------+
                         bindings = <
-   &trans  &kp LC(LS(Z)) &kp LC(Z) &kp LC(C) &kp LC(V)  &trans    &kp PG_UP &kp HOME &kp UP   &kp END   &kp LBKT &kp RBKT
+   &kp LC(LS(Z)) &kp LC(X) &kp LC(Z) &kp LC(C) &kp LC(V)  &trans    &kp PG_UP &kp HOME &kp UP   &kp END   &kp LBKT &kp RBKT
    &trans  &trans        &kp LALT  &kp LCTRL &kp LSHFT  &trans    &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp LBRC &kp RBRC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
                                                                   &trans    &kp BKSP &kp DEL  &trans    &trans   &trans
