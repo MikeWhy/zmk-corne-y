@@ -64,15 +64,15 @@
                 fnkey_layer {
 // -------------------------------------------------------------------------------
 // |      | F1  | F2  | F3  | F4  | F5  |---| F6  | F7  | F8  | F9  | F10 |      |
-// |  -   | F5  | F6  | F7  | F8  |  `  |---|     |     |     |     |     |      |
-// |  _   | F9  | F10 | F11 | F12 |  ~  |---|     |     |     |     |     |      |
+// |  -   | F5  | F6  | F7  | F8  |     |---|     |     |     |     |     |      |
+// |  _   | F9  | F10 | F11 | F12 | CTRL|---| ALT |     |     |     |     |      |
 // +------------------+-----|-----|-----+---+-----|-----|-----+-----|-----|------+
 //                    |     |     |     |---|     |     |     |
 //                    +-----+-----+-----+---+-----+-----+-----+
                         bindings = <
    &trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5         &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &kp F11
    &trans &kp F5  &kp F6  &kp F7  &kp F8  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans &kp F5  &kp F10 &kp F11 &kp F12 &trans          &trans  &trans  &trans  &trans  &trans  &trans
+   &trans &kp F5  &kp F10 &kp F11 &kp F12 &kp LCTRL       &kp RALT  &trans  &trans  &trans  &trans  &trans
                            &trans  &trans  &trans    &trans  &trans  &trans
                         >;
 
@@ -83,7 +83,7 @@
 / {
 conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
+        fn_layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
