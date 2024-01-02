@@ -48,15 +48,15 @@
                 raise_layer {
 // -------------------------------------------------------------------------------
 // |  `   |  1  |  2  |  3  |  4  |  5  |---|  6  |  7  |  8  |  9  |  0  |  -   |
-// |  -   |  =  |  [  |  ]  |  \  |  `  |---|     |     |     |     |     |      |
-// |  _   |  +  |  {  |  }  | "|" |  ~  |---|     |     |     |     |     |      |
+// |  -   |  =  |  [  |  ]  |  \  |  `  |---|  (  |  )  |  [  |  ]  |     |      |
+// |  _   |  +  |  {  |  }  | "|" |  ~  |---|  <  |  >  |  {  |  }  |     |      |
 // +------------------+-----|-----|-----+---+-----|-----|-----+-----|-----|------+
 //                    |     |     |     |---|     |     |     |
 //                    +-----+-----+-----+---+-----+-----+-----+
                         bindings = <
    &kp GRAVE &kp N1   &kp N2 &kp N3  &kp N4   &kp N5          &kp N6    &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS
-   &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE   &kp LCTRL &trans  &trans  &trans  &trans  &trans    
-   &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE   &trans    &trans  &trans  &trans  &trans  &trans    
+   &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE   &kp LPAR  &kp RPAR  &kp LBKT  &kp RBKT  &trans  &trans    
+   &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE   &kp LT    &kp GT    &kp LBRC  &kp LBRC  &trans  &trans    
                                      &trans  &trans  &trans    &trans  &trans  &trans
                         >;
                 };
