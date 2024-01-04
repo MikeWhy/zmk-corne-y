@@ -89,3 +89,6 @@ conditional_layers {
         };
     };
 };
+&led_strip {
+    chain-length = <27>;
+};
