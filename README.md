@@ -32,10 +32,12 @@
 // +------------------+-----|-----|-----+---+-----|-----|-----+-----|-----|------+
 //                    |     |     |     |---|     |     |     |
 //                    +-----+-----+-----+---+-----+-----+-----+
-    //-----  fnkey_layer is activated when both lower_ and raise__ layers are enabled.ggg
+    //-----
+    // fnkey_layer is activated when both lower_ and raise__ layers are enabled.
+    //
     // Steno modes:
-    //-- Normal Mode      : chord 3 control keys on Left keypad.
-    //-- Enter Plover Mode: chord "ASDF" in Normal mode.
-    //-- Select Steno Kbd : chord 3 left-most keys on Left keypad.
+    //   Normal Mode      : chord 3 control keys on Left keypad.
+    //   Enter Plover Mode: chord "ASDF" in Normal mode.
+    //   Select Steno Kbd : chord 3 left-most keys on Left keypad.
     //----
 ```
