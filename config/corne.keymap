@@ -107,6 +107,11 @@ conditional_layers {
     };
 };
 / {
+    // Steno modes:
+    //-- Normal Mode      : chord 3 control keys on Left keypad.
+    //-- Enter Plover Mode: chord "ASDF" in Normal mode.
+    //-- Select Steno Kbd : chord 3 left-most keys on Left keypad.
+    //----
     combos {
         compatible = "zmk,combos";
         combo_plover {
