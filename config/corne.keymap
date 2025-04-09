@@ -96,7 +96,13 @@
 //                         >;
 //                 };
 //         };
-// };
+};
+
+&led_strip {
+    chain-length = <27>;
+};
+
+//---------------------------- Plover:
 // / {
 // conditional_layers {
 //         compatible = "zmk,conditional-layers";
@@ -132,6 +138,4 @@
 //         };
 //     };
 // };
-// &led_strip {
-//     chain-length = <27>;
-// };
+
