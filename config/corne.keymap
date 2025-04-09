@@ -95,23 +95,25 @@
 //                                  &kp C  &kp V  &none  &none  &kp N  &kp M
 //                         >;
 //                 };
-//         };
+        
+        };
 };
 
-// &led_strip {
-//     chain-length = <27>;
-// };
+/ {
+conditional_layers {
+        compatible = "zmk,conditional-layers";
+        fn_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+};
+
+&led_strip {
+    chain-length = <27>;
+};
 
 //---------------------------- Plover:
-// / {
-// conditional_layers {
-//         compatible = "zmk,conditional-layers";
-//         fn_layer {
-//             if-layers = <1 2>;
-//             then-layer = <3>;
-//         };
-//     };
-// };
 // / {
 //     // Steno modes:
 //     //-- Normal Mode      : chord 3 control keys on Left keypad.
