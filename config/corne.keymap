@@ -79,59 +79,59 @@
                            &trans  &trans  &trans    &trans  &trans  &trans
                         >;
                 };
-                plover_layer {
-                        bindings = <
-      &none  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM        &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM
-      &none  &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST        &kp PLV_ST  &kp PLV_FR  &kp PLV_PR  &kp PLV_LR  &kp PLV_TR  &kp PLV_DR
-      &none  &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST        &kp PLV_ST  &kp PLV_RR  &kp PLV_BR  &kp PLV_GR  &kp PLV_SR  &kp PLV_ZR
-                                              &kp PLV_A  &kp PLV_O  &none    &none  &kp PLV_E  &kp PLV_U
-                        >;
-                };
-                plover_keyboard {
-                        bindings = <
-      &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp HASH
-      &none  &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I   &kp O   &kp P    &kp MINUS
-      &none  &kp A   &kp S   &kp D   &kp F   &kp G       &kp H   &kp J   &kp K   &kp L   &kp SEMI &kp SQT
-                                 &kp C  &kp V  &none  &none  &kp N  &kp M
-                        >;
-                };
-        };
-};
-/ {
-conditional_layers {
-        compatible = "zmk,conditional-layers";
-        fn_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-};
-/ {
-    // Steno modes:
-    //-- Normal Mode      : chord 3 control keys on Left keypad.
-    //-- Enter Plover Mode: chord "ASDF" in Normal mode.
-    //-- Select Steno Kbd : chord 3 left-most keys on Left keypad.
-    //----
-    combos {
-        compatible = "zmk,combos";
-        combo_plover {
-            timeout-ms = <50>;
-            key-positions = <13 14 15 16>;
-            layers = <0>;
-            bindings = <&to 4>;
-        };
-        combo_stenokeys {
-            timeout-ms = <50>;
-            key-positions = <0 12 24>;
-            bindings = <&to 5>;
-        };
-        combo_normal {
-            timeout-ms = <50>;
-            key-positions = <36 37 38>;
-            bindings = <&to 0>;
-        };
-    };
-};
+//                 plover_layer {
+//                         bindings = <
+//       &none  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM        &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM  &kp PLV_NM
+//       &none  &kp PLV_SL  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST        &kp PLV_ST  &kp PLV_FR  &kp PLV_PR  &kp PLV_LR  &kp PLV_TR  &kp PLV_DR
+//       &none  &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST        &kp PLV_ST  &kp PLV_RR  &kp PLV_BR  &kp PLV_GR  &kp PLV_SR  &kp PLV_ZR
+//                                               &kp PLV_A  &kp PLV_O  &none    &none  &kp PLV_E  &kp PLV_U
+//                         >;
+//                 };
+//                 plover_keyboard {
+//                         bindings = <
+//       &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp HASH
+//       &none  &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I   &kp O   &kp P    &kp MINUS
+//       &none  &kp A   &kp S   &kp D   &kp F   &kp G       &kp H   &kp J   &kp K   &kp L   &kp SEMI &kp SQT
+//                                  &kp C  &kp V  &none  &none  &kp N  &kp M
+//                         >;
+//                 };
+//         };
+// };
+// / {
+// conditional_layers {
+//         compatible = "zmk,conditional-layers";
+//         fn_layer {
+//             if-layers = <1 2>;
+//             then-layer = <3>;
+//         };
+//     };
+// };
+// / {
+//     // Steno modes:
+//     //-- Normal Mode      : chord 3 control keys on Left keypad.
+//     //-- Enter Plover Mode: chord "ASDF" in Normal mode.
+//     //-- Select Steno Kbd : chord 3 left-most keys on Left keypad.
+//     //----
+//     combos {
+//         compatible = "zmk,combos";
+//         combo_plover {
+//             timeout-ms = <50>;
+//             key-positions = <13 14 15 16>;
+//             layers = <0>;
+//             bindings = <&to 4>;
+//         };
+//         combo_stenokeys {
+//             timeout-ms = <50>;
+//             key-positions = <0 12 24>;
+//             bindings = <&to 5>;
+//         };
+//         combo_normal {
+//             timeout-ms = <50>;
+//             key-positions = <36 37 38>;
+//             bindings = <&to 0>;
+//         };
+//     };
+// };
 &led_strip {
     chain-length = <27>;
 };
